@@ -14,21 +14,11 @@ class ArticleViewModel extends StateNotifier<AsyncValue<Articles>> {
     fetchArticles();
   }
 
+  /// A function that fetched all the articles and update the state
   Future<void> fetchArticles() async {
     try {
       final Articles articles = await _apiService.fetchArticles();
       state = AsyncValue.data(articles);
-    } catch (e) {
-      state = AsyncValue.error(e.toString(), StackTrace.empty);
-    }
-  }
-
-  Future<void> printArticles() async {
-    try {
-      final Articles articles = await _apiService.fetchArticles();
-      for (Article article in articles.articles) {
-        print(article.toJson());
-      }
     } catch (e) {
       state = AsyncValue.error(e.toString(), StackTrace.empty);
     }

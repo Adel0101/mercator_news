@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
               SizeConfig().init(constraints, orientation);
               return MaterialApp(
                 title: 'Mercator News',
+                debugShowCheckedModeBanner: false,
                 theme: ThemeData(
                   colorScheme:
                       ColorScheme.fromSeed(seedColor: Colors.deepPurple),

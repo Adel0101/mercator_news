@@ -13,6 +13,7 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
+    // timer to simulate a loading screen
     Timer(const Duration(seconds: 3),
         () => Navigator.popAndPushNamed(context, Routes.articles));
     super.initState();

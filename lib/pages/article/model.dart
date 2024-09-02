@@ -43,6 +43,7 @@ class Article {
   final String customUrlTitle;
   final String name;
   final String date;
+  final String time;
   final String dateCreated;
   final String description;
   final bool hasDescription;
@@ -58,6 +59,7 @@ class Article {
   final String score1;
   final String team2;
   final String score2;
+  final String section;
   final String source;
   final String sourceImage;
   final String sourceImageSrc;
@@ -77,6 +79,7 @@ class Article {
     required this.customUrlTitle,
     required this.name,
     required this.date,
+    required this.time,
     required this.dateCreated,
     required this.description,
     required this.hasDescription,
@@ -92,6 +95,7 @@ class Article {
     required this.score1,
     required this.team2,
     required this.score2,
+    required this.section,
     required this.source,
     required this.sourceImage,
     required this.sourceImageSrc,
@@ -112,6 +116,7 @@ class Article {
     String? customUrlTitle,
     String? name,
     String? date,
+    String? time,
     String? dateCreated,
     String? description,
     bool? hasDescription,
@@ -127,6 +132,7 @@ class Article {
     String? score1,
     String? team2,
     String? score2,
+    String? section,
     String? source,
     String? sourceImage,
     String? sourceImageSrc,
@@ -146,6 +152,7 @@ class Article {
         customUrlTitle: customUrlTitle ?? this.customUrlTitle,
         name: name ?? this.name,
         date: date ?? this.date,
+        time: time ?? this.time,
         dateCreated: dateCreated ?? this.dateCreated,
         description: description ?? this.description,
         hasDescription: hasDescription ?? this.hasDescription,
@@ -161,6 +168,7 @@ class Article {
         score1: score1 ?? this.score1,
         team2: team2 ?? this.team2,
         score2: score2 ?? this.score2,
+        section: section ?? this.section,
         source: source ?? this.source,
         sourceImage: sourceImage ?? this.sourceImage,
         sourceImageSrc: sourceImageSrc ?? this.sourceImageSrc,
@@ -181,6 +189,7 @@ class Article {
         customUrlTitle: json["customUrlTitle"],
         name: json["name"],
         date: json["date"],
+        time: json["time"],
         dateCreated: json["dateCreated"],
         description: json["description"],
         hasDescription: json["hasDescription"],
@@ -196,6 +205,7 @@ class Article {
         score1: json["score1"],
         team2: json["team2"],
         score2: json["score2"],
+        section: json["section"],
         source: json["source"],
         sourceImage: json["sourceImage"],
         sourceImageSrc: json["sourceImageSrc"],
@@ -216,6 +226,7 @@ class Article {
         "customUrlTitle": customUrlTitle,
         "name": name,
         "date": date,
+        "time": time,
         "dateCreated": dateCreated,
         "description": description,
         "hasDescription": hasDescription,
@@ -231,6 +242,7 @@ class Article {
         "score1": score1,
         "team2": team2,
         "score2": score2,
+        "section": section,
         "source": source,
         "sourceImage": sourceImage,
         "sourceImageSrc": sourceImageSrc,

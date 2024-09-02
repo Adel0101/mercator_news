@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mercator_news_app/pages/article/index.dart';
 import 'package:mercator_news_app/pages/article/model.dart';
-import 'package:mercator_news_app/pages/splash/index.dart';
+import 'package:mercator_news_app/pages/splash/view.dart';
 import 'package:mercator_news_app/utils/router/paths.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
